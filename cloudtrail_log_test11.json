@@ -1,0 +1,877 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAtwmftuui04k20t3o",
+        "arn": "arn:aws:iam::123456789012:user/alice",
+        "accountId": "123456789012",
+        "userName": "alice"
+      },
+      "eventTime": "2024-09-26T08:25:44.308Z",
+      "eventSource": "lambda.amazonaws.com",
+      "eventName": "DeleteFunction",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.0.17",
+      "userAgent": "Mozilla/5.0 (Windows NT 5.1; rv:10.2) Gecko/20100101 Firefox/10.2.2",
+      "eventID": "c8c28e0a-8c25-4d78-9232-7b4c5ec2cec3",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "AIDA0pbsty01ekaehujg",
+        "arn": "arn:aws:iam::123456789012:user/catherine",
+        "accountId": "123456789012",
+        "userName": "catherine"
+      },
+      "eventTime": "2024-09-27T08:20:16.303Z",
+      "eventSource": "ecs.amazonaws.com",
+      "eventName": "RunTask",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.0.205",
+      "userAgent": "Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.3; Trident/3.0)",
+      "eventID": "657b3717-854a-4202-9318-d48c23cfaa94",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDA6ot3o0lnuj8uia9c",
+        "arn": "arn:aws:iam::123456789012:user/alice",
+        "accountId": "123456789012",
+        "userName": "alice"
+      },
+      "eventTime": "2024-09-26T18:18:42.338Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "PutSecretValue",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.168.1.82",
+      "userAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:6.8) Gecko/20100101 Firefox/6.8.3",
+      "eventID": "ce8cf854-7b22-40f0-8241-a4781d2028ce",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAojah9tdat7voz7z1",
+        "arn": "arn:aws:iam::123456789012:user/brian",
+        "accountId": "123456789012",
+        "userName": "brian"
+      },
+      "eventTime": "2024-09-25T14:02:31.822Z",
+      "eventSource": "lambda.amazonaws.com",
+      "eventName": "CreateFunction",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.0.117",
+      "userAgent": "Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko",
+      "eventID": "5e3244bf-a605-4cd7-aba8-c7cfb5e83314",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAyfa2qx0rluz3km2m",
+        "arn": "arn:aws:iam::123456789012:user/alice",
+        "accountId": "123456789012",
+        "userName": "alice"
+      },
+      "eventTime": "2024-09-25T19:39:38.630Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "PutSecretValue",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.0.48",
+      "userAgent": "Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.0; Trident/7.1)",
+      "eventID": "43244442-ec14-4d83-82a9-cb59507e27e8",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDA42tesn5xic4lbx1e",
+        "arn": "arn:aws:iam::123456789012:user/catherine",
+        "accountId": "123456789012",
+        "userName": "catherine"
+      },
+      "eventTime": "2024-09-26T08:03:36.928Z",
+      "eventSource": "lambda.amazonaws.com",
+      "eventName": "CreateFunction",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.168.1.181",
+      "userAgent": "Opera/10.5 (X11; Linux x86_64; U; SO Presto/2.9.183 Version/10.00)",
+      "eventID": "6eeb1c8e-33b1-4563-b862-dfb8b3f9b617",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAyczftqnzu66qrjwz",
+        "arn": "arn:aws:iam::123456789012:user/brian",
+        "accountId": "123456789012",
+        "userName": "brian"
+      },
+      "eventTime": "2024-09-27T11:07:55.428Z",
+      "eventSource": "monitoring.amazonaws.com",
+      "eventName": "PutMetricData",
+      "awsRegion": "ap-east-1",
+      "sourceIPAddress": "10.0.0.111",
+      "userAgent": "Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:15.9) Gecko/20100101 Firefox/15.9.3",
+      "eventID": "21acd1b6-f59f-4546-ab52-b892bc808629",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAp4lja1dkkv9qjv8o",
+        "arn": "arn:aws:iam::123456789012:user/brian",
+        "accountId": "123456789012",
+        "userName": "brian"
+      },
+      "eventTime": "2024-09-26T12:03:06.272Z",
+      "eventSource": "ecs.amazonaws.com",
+      "eventName": "RunTask",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.168.1.243",
+      "userAgent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.0; Trident/4.1)",
+      "eventID": "80968f81-58d0-4705-8c2e-eb3e6499139f",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDA7tcb9ix11jb64ogt",
+        "arn": "arn:aws:iam::123456789012:user/eva",
+        "accountId": "123456789012",
+        "userName": "eva"
+      },
+      "eventTime": "2024-09-26T15:02:46.563Z",
+      "eventSource": "lambda.amazonaws.com",
+      "eventName": "Invoke",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.0.198",
+      "userAgent": "Mozilla/5.0 (Windows; U; Windows NT 6.2) AppleWebKit/536.0.2 (KHTML, like Gecko) Chrome/14.0.860.0 Safari/536.0.2",
+      "eventID": "424facfc-7204-496b-ba2d-4bb553ea114d",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAmw5cjyyhdi5voj4f",
+        "arn": "arn:aws:iam::123456789012:user/alice",
+        "accountId": "123456789012",
+        "userName": "alice"
+      },
+      "eventTime": "2024-09-26T09:44:00.672Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "PutSecretValue",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.168.1.245",
+      "userAgent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 5.0; Trident/3.0)",
+      "eventID": "fcbb8324-41c8-47ed-ac20-f765c9a79d2d",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDA1dlqe1t6rhch9nl9",
+        "arn": "arn:aws:iam::123456789012:user/dimitri",
+        "accountId": "123456789012",
+        "userName": "dimitri"
+      },
+      "eventTime": "2024-09-25T12:11:43.468Z",
+      "eventSource": "ecs.amazonaws.com",
+      "eventName": "RunTask",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.0.90",
+      "userAgent": "Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.3; Trident/5.1)",
+      "eventID": "1a84ab92-0f90-40ee-b812-e74d584cdc57",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDA7u9uxw4q607m8v0i",
+        "arn": "arn:aws:iam::123456789012:user/alice",
+        "accountId": "123456789012",
+        "userName": "alice"
+      },
+      "eventTime": "2024-09-27T11:34:58.265Z",
+      "eventSource": "ecs.amazonaws.com",
+      "eventName": "RunTask",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.0.1",
+      "userAgent": "Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/7.0; .NET CLR 3.0.73112.4)",
+      "eventID": "f411cd05-920f-4748-934f-be43eeba16c4",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDA06pi11oao1napl0y",
+        "arn": "arn:aws:iam::123456789012:user/alice",
+        "accountId": "123456789012",
+        "userName": "alice"
+      },
+      "eventTime": "2024-09-26T16:09:34.080Z",
+      "eventSource": "dynamodb.amazonaws.com",
+      "eventName": "DeleteItem",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.168.1.48",
+      "userAgent": "Mozilla/5.0 (Windows NT 6.2; rv:14.0) Gecko/20100101 Firefox/14.0.2",
+      "eventID": "7b404ba0-bc5a-419c-9da2-29b911298039",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAd542wp3y1iher9bw",
+        "arn": "arn:aws:iam::123456789012:user/catherine",
+        "accountId": "123456789012",
+        "userName": "catherine"
+      },
+      "eventTime": "2024-09-26T01:04:52.518Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "PutSecretValue",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.168.1.241",
+      "userAgent": "Mozilla/5.0 (Windows NT 6.1; Trident/7.0; Touch; rv:11.0) like Gecko",
+      "eventID": "0018c7be-a46e-4005-b616-fd6293af207a",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDA61fem4d7fjht0gwv",
+        "arn": "arn:aws:iam::123456789012:user/brian",
+        "accountId": "123456789012",
+        "userName": "brian"
+      },
+      "eventTime": "2024-09-26T00:44:21.701Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DeleteVolume",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "65.43.21.37",
+      "userAgent": "Mozilla/5.0 (Windows; U; Windows NT 6.3) AppleWebKit/534.0.0 (KHTML, like Gecko) Chrome/14.0.856.0 Safari/534.0.0",
+      "eventID": "804c6691-b868-4bae-83dd-d814efcd1f92",
+      "requestParameters": {
+        "instancesSet": {
+          "items": [
+            {
+              "instanceId": "prod-d61477lq"
+            }
+          ]
+        }
+      },
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAsy8ha4krt4579uqz",
+        "arn": "arn:aws:iam::123456789012:user/alice",
+        "accountId": "123456789012",
+        "userName": "alice"
+      },
+      "eventTime": "2024-09-26T05:52:24.109Z",
+      "eventSource": "dynamodb.amazonaws.com",
+      "eventName": "GetItem",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.168.1.209",
+      "userAgent": "Mozilla/5.0 (Windows NT 5.1; rv:12.0) Gecko/20100101 Firefox/12.0.8",
+      "eventID": "a9c8fb0c-ff44-442f-a74c-dd68af85ed6b",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAjdqwk9jhd5pu4tc7",
+        "arn": "arn:aws:iam::123456789012:user/catherine",
+        "accountId": "123456789012",
+        "userName": "catherine"
+      },
+      "eventTime": "2024-09-26T13:39:56.356Z",
+      "eventSource": "dynamodb.amazonaws.com",
+      "eventName": "GetItem",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.0.132",
+      "userAgent": "Opera/14.1 (Windows NT 5.1; U; LA Presto/2.9.165 Version/10.00)",
+      "eventID": "90cc11d1-fc6c-4d30-97b6-7cda81edecc5",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDA8xw95cphhd77esxz",
+        "arn": "arn:aws:iam::123456789012:user/eva",
+        "accountId": "123456789012",
+        "userName": "eva"
+      },
+      "eventTime": "2024-09-26T12:07:37.414Z",
+      "eventSource": "monitoring.amazonaws.com",
+      "eventName": "PutMetricData",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.168.1.173",
+      "userAgent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/4.1)",
+      "eventID": "07383a96-1c0f-4f2d-a00d-e2b4e52bb817",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAk9ob132ggvotrdeq",
+        "arn": "arn:aws:iam::123456789012:user/brian",
+        "accountId": "123456789012",
+        "userName": "brian"
+      },
+      "eventTime": "2024-09-26T19:16:04.189Z",
+      "eventSource": "ecs.amazonaws.com",
+      "eventName": "StopTask",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.168.1.82",
+      "userAgent": "Mozilla/5.0 (Windows; U; Windows NT 5.2) AppleWebKit/531.0.0 (KHTML, like Gecko) Chrome/14.0.808.0 Safari/531.0.0",
+      "eventID": "ab39cf1d-54ac-44c8-a273-54835e9a7c85",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAtpsq4xeeoc6lsygj",
+        "arn": "arn:aws:iam::123456789012:user/alice",
+        "accountId": "123456789012",
+        "userName": "alice"
+      },
+      "eventTime": "2024-09-27T08:56:21.180Z",
+      "eventSource": "lambda.amazonaws.com",
+      "eventName": "CreateFunction",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.0.90",
+      "userAgent": "Mozilla/5.0 (Windows; U; Windows NT 6.1) AppleWebKit/534.2.0 (KHTML, like Gecko) Chrome/25.0.809.0 Safari/534.2.0",
+      "eventID": "2a842f3d-b037-4477-ab8d-023df319d707",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAsj9kwvnqzb79rxx8",
+        "arn": "arn:aws:iam::123456789012:user/dimitri",
+        "accountId": "123456789012",
+        "userName": "dimitri"
+      },
+      "eventTime": "2024-09-26T05:16:08.587Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "DeleteItem",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.168.1.199",
+      "userAgent": "Mozilla/5.0 (Windows NT 5.1; rv:5.6) Gecko/20100101 Firefox/5.6.3",
+      "eventID": "1944a8cb-c338-45b3-96f6-c0eec540e699",
+      "requestParameters": {
+        "bucketName": "prod-data-bucket"
+      },
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAl9q04v5u36mbcg6a",
+        "arn": "arn:aws:iam::123456789012:user/brian",
+        "accountId": "123456789012",
+        "userName": "brian"
+      },
+      "eventTime": "2024-09-26T19:32:10.229Z",
+      "eventSource": "lambda.amazonaws.com",
+      "eventName": "CreateFunction",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.168.1.49",
+      "userAgent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/4.1; .NET CLR 3.9.69534.0)",
+      "eventID": "f39b47f2-4203-4197-aecd-bdf5bb0bfe9e",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.05",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "EXAMPLE12345",
+        "arn": "arn:aws:iam::123456789012:user/Alice",
+        "accountId": "123456789012",
+        "accessKeyId": "EXAMPLEKEY",
+        "userName": "Alice"
+      },
+      "eventTime": "2024-10-01T12:34:56Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "DeleteObject",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "192.0.2.0",
+      "requestParameters": {
+        "bucketName": "my-prod-bucket",
+        "key": "my-folder/my-file.txt",
+        "x-amz-request-id": "C123456789",
+        "x-amz-id-2": "EXAMPLE123/abcd1234efgh5678ijklmnop"
+      },
+      "responseElements": null,
+      "requestID": "C123456789",
+      "eventID": "12345678-90ab-cdef-1234-567890abcdef",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.05",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "EXAMPLEUSER123",
+        "arn": "arn:aws:iam::123456789012:user/Alice",
+        "accountId": "123456789012",
+        "accessKeyId": "EXAMPLEACCESSKEY",
+        "userName": "Alice"
+      },
+      "eventTime": "2024-10-01T12:34:56Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "RunInstances",
+      "awsRegion": "cn-west-2",
+      "sourceIPAddress": "203.0.113.1",
+      "requestParameters": {
+        "imageId": "ami-0abcdef1234567890",
+        "instanceType": "t2.micro",
+        "minCount": 1,
+        "maxCount": 1,
+        "tagSpecifications": [
+          {
+            "resourceType": "instance",
+            "tags": [
+              {
+                "Key": "Environment",
+                "Value": "production"
+              },
+              {
+                "Key": "Project",
+                "Value": "MyProject"
+              }
+            ]
+          }
+        ]
+      },
+      "responseElements": {
+        "instancesSet": {
+          "items": [
+            {
+              "instanceId": "i-0abcdef1234567890",
+              "imageId": "ami-0abcdef1234567890",
+              "instanceState": {
+                "code": 0,
+                "name": "pending"
+              },
+              "privateDnsName": "ip-10-0-0-1.us-west-2.compute.internal",
+              "dnsName": "",
+              "reason": ""
+            }
+          ]
+        }
+      },
+      "requestID": "C123456789-0a1b-2c3d-4e5f-6g7h8i9j0k1l",
+      "eventID": "1a2b3c4d-5e6f-7g8h-9i0j-k1l2m3n4o5p6",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.05",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "EXAMPLEUSER123",
+        "arn": "arn:aws:iam::123456789012:user/Bob",
+        "accountId": "123456789012",
+        "accessKeyId": "EXAMPLEACCESSKEY",
+        "userName": "Bob"
+      },
+      "eventTime": "2024-10-01T12:00:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "PutObject",
+      "awsRegion": "us-west-2",
+      "sourceIPAddress": "192.168.1.5",
+      "requestParameters": {
+        "bucketName": "my-example-bucket",
+        "key": "example-object.txt"
+      },
+      "responseElements": {
+        "x-amz-request-id": "C1234567890",
+        "x-amz-id-2": "exampleID"
+      },
+      "requestID": "C123456789-0a1b-2c3d-4e5f-6g7h8i9j0k1l",
+      "eventID": "1a2b3c4d-5e6f-7g8h-9i0j-k1l2m3n4o5p6",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.05",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "EXAMPLEUSER456",
+        "arn": "arn:aws:iam::123456789012:user/Alice",
+        "accountId": "123456789012",
+        "accessKeyId": "EXAMPLEACCESSKEY",
+        "userName": "Alice"
+      },
+      "eventTime": "2024-10-01T12:10:00Z",
+      "eventSource": "logs.amazonaws.com",
+      "eventName": "CreateLogGroup",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.0.5",
+      "requestParameters": {
+        "logGroupName": "my-log-group"
+      },
+      "responseElements": {
+        "logGroupName": "my-log-group"
+      },
+      "requestID": "C123456789-0a1b-2c3d-4e5f-6g7h8i9j0k1l",
+      "eventID": "2b3c4d5e-6f7g-8h9i-0j1k-l2m3n4o5p6q7",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.05",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "EXAMPLEUSER789",
+        "arn": "arn:aws:iam::123456789012:user/Charlie",
+        "accountId": "123456789012",
+        "accessKeyId": "EXAMPLEACCESSKEY",
+        "userName": "Charlie"
+      },
+      "eventTime": "2024-10-01T12:20:00Z",
+      "eventSource": "lambda.amazonaws.com",
+      "eventName": "Invoke",
+      "awsRegion": "us-west-1",
+      "sourceIPAddress": "192.168.1.10",
+      "requestParameters": {
+        "functionName": "myLambdaFunction",
+        "payload": "{\"key\": \"value\"}"
+      },
+      "responseElements": {
+        "statusCode": 200,
+        "payload": "{\"result\": \"success\"}"
+      },
+      "requestID": "C123456789-0a1b-2c3d-4e5f-6g7h8i9j0k1l",
+      "eventID": "3c4d5e6f-7g8h-9i0j-k1l2-m3n4o5p6q7r8",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventID": "12345678-1234-1234-1234-123456789012",
+      "eventTime": "2024-10-02T12:00:00Z",
+      "eventName": "GetObject",
+      "userIdentity": {
+        "type": "IAMUser",
+        "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+      },
+      "sourceIPAddress": "192.168.1.10",
+      "awsRegion": "us-east-1",
+      "eventSource": "s3.amazonaws.com",
+      "requestParameters": {
+        "bucketName": "my-bucket",
+        "key": "my-object"
+      } 
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDA7u9uxhdq607m8v0i",
+        "arn": "arn:aws:iam::123456789013:user/patrick",
+        "accountId": "123456789013",
+        "userName": "patrick"
+      },
+      "eventTime": "2024-09-27T11:34:59.265Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreatePolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.0.1",
+      "userAgent": "Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/7.0; .NET CLR 3.0.73112.4)",
+      "eventID": "f411cd05-920f-4748-934f-be43eeba26c4",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789013"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDA7u9uxhdq607m2v0i",
+        "arn": "arn:aws:iam::123456789014:user/kevin",
+        "accountId": "123456789014",
+        "userName": "kevin"
+      },
+      "eventTime": "2024-09-27T11:34:59.265Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "AttachUserPolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.0.1",
+      "userAgent": "Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/7.0; .NET CLR 3.0.73112.4)",
+      "eventID": "f411cd05-920f-4748-934f-bf43eeba26c4",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789014"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDA7u9uxhdq607m2vli",
+        "arn": "arn:aws:iam::123456789014:user/tony",
+        "accountId": "123456789044",
+        "userName": "tony"
+      },
+      "eventTime": "2024-09-27T11:34:59.265Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "test",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.0.1",
+      "userAgent": "Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/7.0; .NET CLR 3.0.73112.4)",
+      "eventID": "f411cd05-920f-3748-934f-bf43eeba26c4",
+      "requestParameters": {},
+      "responseElements": {},
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789014"
+    },
+    {
+      "eventVersion": "1.05",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAIN1234567890",
+        "arn": "arn:aws:iam::123456789012:user/test-user",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAI1234567890",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "false",
+            "creationDate": "2024-10-02T10:00:00Z"
+          }
+        }
+      },
+      "eventTime": "2024-10-02T10:00:01Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.0.2.0",
+      "userAgent": "Mozilla/5.0",
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "requestParameters": null,
+      "requestID": "request-id-001",
+      "eventID": "event-id-001",
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "readOnly": true
+    },
+    {
+      "eventVersion": "1.05",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAIN1234567890",
+        "arn": "arn:aws:iam::123456789012:user/test-user",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAI1234567890",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "false",
+            "creationDate": "2024-10-02T10:00:00Z"
+          }
+        }
+      },
+      "eventTime": "2024-10-02T10:05:01Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.0.2.0",
+      "userAgent": "Mozilla/5.0",
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "requestParameters": null,
+      "requestID": "request-id-002",
+      "eventID": "event-id-002",
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "readOnly": true
+    },
+    {
+      "eventVersion": "1.05",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAIN1234567890",
+        "arn": "arn:aws:iam::123456789012:user/test-user",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAI1234567890",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "false",
+            "creationDate": "2024-10-02T10:00:00Z"
+          }
+        }
+      },
+      "eventTime": "2024-10-02T10:10:01Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.0.2.0",
+      "userAgent": "Mozilla/5.0",
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "requestParameters": null,
+      "requestID": "request-id-003",
+      "eventID": "event-id-003",
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "readOnly": true
+    },
+    {
+      "eventVersion": "1.05",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAIN1234567890",
+        "arn": "arn:aws:iam::123456789012:user/test-user",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAI1234567890",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "false",
+            "creationDate": "2024-10-02T10:00:00Z"
+          }
+        }
+      },
+      "eventTime": "2024-10-02T10:15:01Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.0.2.0",
+      "userAgent": "Mozilla/5.0",
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "requestParameters": null,
+      "requestID": "request-id-004",
+      "eventID": "event-id-004",
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "readOnly": true
+    },
+    {
+      "eventVersion": "1.05",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAIN1234567890",
+        "arn": "arn:aws:iam::123456789012:user/test-user",
+        "accountId": "123456789012",
+        "accessKeyId": "AKIAI1234567890",
+        "sessionContext": {
+          "attributes": {
+            "mfaAuthenticated": "false",
+            "creationDate": "2024-10-02T10:00:00Z"
+          }
+        }
+      },
+      "eventTime": "2024-10-02T10:20:01Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.0.2.0",
+      "userAgent": "Mozilla/5.0",
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "requestParameters": null,
+      "requestID": "request-id-005",
+      "eventID": "event-id-005",
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "readOnly": true
+    }
+  ]
+}
