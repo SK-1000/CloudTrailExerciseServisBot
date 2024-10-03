@@ -69,26 +69,20 @@ const rateRisk = (event, isIpValid, failedLoginAttempts, alerts) => {
   let riskRating = 'Low';
   let reason = [];
 
-  // Check for IP validity
-  if (!isIpValid) {
-    riskRating = 'Medium';
-    reason.push('MEDIUM RISK: IP address is outside the allowed ranges,');
-    alerts.push(`MEDIUM RISK: Event ID ${event.eventID} from outside allowed IP ranges: ${event.sourceIPAddress}.`);
-  }
+  //this might be temporary.
+  const setRisk = (newRisk, newReason) => {
+    if (newRisk === 'High' || (newRisk === 'Medium' && riskRating === 'Low')) {
+      riskRating = newRisk;
+      reason.push(newReason);
+    }
+  };
 
-  // Check region validity
-  if (!usEuRegions.includes(event.awsRegion)) {
-    riskRating = 'Medium';
-    reason.push(`MEDIUM RISK: Event from an unsupported AWS region: ${event.awsRegion},`);
-    alerts.push(`MEDIUM RISK: Event ID ${event.eventID} detected in unsupported AWS region: ${event.awsRegion}.`);
-  }
-
-  // Check for manual deletion
+   // Check for manual deletion
   const isManualDeletion = /Delete/i.test(event.eventName) && 
                            (event.userIdentity?.type === 'IAMUser' || event.userIdentity?.type === 'Root');
 
   if (isManualDeletion) {
-    riskRating = 'High';
+    // riskRating = 'High';
     reason.push('HIGH RISK: Manual Deletion may have occurred; investigation required,');
     alerts.push(`HIGH RISK: Manual deletion detected by ${event.userIdentity.arn} on ${event.eventName}. Event ID: ${event.eventID}.`);
   }
@@ -99,7 +93,7 @@ const rateRisk = (event, isIpValid, failedLoginAttempts, alerts) => {
   if (isIamPolicyCreation) {
     const userName = event.userIdentity?.userName || 'Unknown User';
     alerts.push(`HIGH RISK: User (${userName}) created a new IAM policy. Event ID: ${event.eventID}.`);
-    riskRating = 'High';
+    // riskRating = 'High';
     reason.push(`HIGH RISK: User has illegally created a new IAM policy: ${userName},`);
   }
 
@@ -118,10 +112,34 @@ const rateRisk = (event, isIpValid, failedLoginAttempts, alerts) => {
 
   const isIamPolicyChange = event.eventSource === 'iam.amazonaws.com' && iamChangeActions.includes(event.eventName);
 
+    // Check for IP validity
+  if (!isIpValid) {
+    // riskRating = 'Medium';
+    setRisk('Medium', 'MEDIUM RISK: IP address is outside the allowed ranges' )
+    reason.push('MEDIUM RISK: IP address is outside the allowed ranges,');
+    alerts.push(`MEDIUM RISK: Event ID ${event.eventID} from outside allowed IP ranges: ${event.sourceIPAddress}.`);
+  }
+
+  // Check region validity
+  if (!usEuRegions.includes(event.awsRegion)) {
+    // riskRating = 'Medium';
+    setRisk('Medium', 'MEDIUM RISK: Event from an unsupported AWS region' )
+    reason.push(`MEDIUM RISK: Event from an unsupported AWS region: ${event.awsRegion},`);
+    alerts.push(`MEDIUM RISK: Event ID ${event.eventID} detected in unsupported AWS region: ${event.awsRegion}.`);
+  }
+
+  if (!approvedServices.includes(event.eventSource)) {
+    // riskRating = 'Medium';
+    setRisk('Medium', 'Event using unapproved service' )
+    reason.push(`MEDIUM RISK: Event using unapproved service: ${event.eventSource},`);
+    alerts.push(`MEDIUM RISK: Event ID ${event.eventID} is using a service outside approved services: ${event.eventSource}.`);
+  }
+
   if (isIamPolicyChange) {
     const userName = event.userIdentity?.userName || 'Unknown User';
     alerts.push(`HIGH RISK: User (${userName}) changed IAM policy. Event ID: ${event.eventID}.`);
-    riskRating = 'High';
+    // riskRating = 'High';
+    setRisk('High', 'User has made changes to IAM policies' )
     reason.push(`HIGH RISK: User has made changes to IAM policies: ${userName},`);
   }
 
@@ -136,7 +154,8 @@ const rateRisk = (event, isIpValid, failedLoginAttempts, alerts) => {
   const isProductionTagBucketS3 = event.eventSource === 's3.amazonaws.com' && event.requestParameters?.bucketName?.includes('prod');
 
   if ((isProductionTagBucketS3 || isProductionTaggedEC2) && isHighRiskOperation) {
-    riskRating = 'High';
+    // riskRating = 'High';
+    setRisk('High', 'Deletion or modification of production resource' )
     reason.push('HIGH RISK: Deletion or modification of production resource; review required,');
     alerts.push(`HIGH RISK: Deletion/modification in production resource detected. Event ID: ${event.eventID}.`);
   }
@@ -147,19 +166,17 @@ const rateRisk = (event, isIpValid, failedLoginAttempts, alerts) => {
   const isEncryptedFileSystem = event.eventSource === 'elasticfilesystem.amazonaws.com' && event.requestParameters?.Encrypted;
 
   if (isS3WithEncryption || isRDSWithEncryption || isEncryptedFileSystem) {
-    riskRating = 'High';
+    // riskRating = 'High';
+    setRisk('High', 'Event does not meet compliance requirements for encryption' )
     reason.push('HIGH RISK: Event does not meet compliance requirements for encryption,');
     alerts.push(`HIGH RISK: Event ID ${event.eventID} does not meet compliance requirements for encryption.`);
   }
 
-  if (!approvedServices.includes(event.eventSource)) {
-    riskRating = 'Medium';
-    reason.push(`MEDIUM RISK: Event using unapproved service: ${event.eventSource},`);
-    alerts.push(`MEDIUM RISK: Event ID ${event.eventID} is using a service outside approved services: ${event.eventSource}.`);
-  }
+  
 
   if (event.userIdentity?.type === 'Root') {
-    riskRating = 'High';
+    // riskRating = 'High';
+    setRisk('High', 'Root user usage is strictly forbidden' )
     reason.push('HIGH RISK: Root user usage is strictly forbidden,');
     alerts.push(`HIGH RISK: Event ID ${event.eventID} detected from Root user: ${event.userIdentity.arn}.`);
   }
@@ -172,11 +189,13 @@ const rateRisk = (event, isIpValid, failedLoginAttempts, alerts) => {
 
     // Check if there are multiple failed login attempts
     if (failedLoginAttempts.length >= 5) { // Threshold for multiple attempts
-      riskRating = 'High';
+      // riskRating = 'High';
+      setRisk('High', 'Multiple failed login attempts require review' )
       reason.push('High RISK: Multiple failed login attempts require review,');
       alerts.push(`High RISK: User ${event.userIdentity.arn} has multiple failed login attempts.`);
     }
   }
+
 
   return { riskRating, reason: reason.join(' ') };
 };
