@@ -10,6 +10,7 @@ The CloudTrail log analysis script is designed to parse AWS CloudTrail logs, ide
 
 1. **Company Security Policy**:
    - Read the security policy in depth and identified the anomalies that required logging 
+   - I researched anomalies that would be considered high versus medium priority.
    - Intrepretted from working on the policy the risk rating of an anomaly.
 
 
@@ -50,6 +51,30 @@ The CloudTrail log analysis script is designed to parse AWS CloudTrail logs, ide
 
 8. **Terminal Logging**:
    - logged total events processed, high risk events count, Medium risk events count and low risk events count as an "at a glance" statistic.
+
+8. **Docker and mySQL**:
+   - I installed docker on my machine
+   - I created a docker container
+   - I attempted to load the data from the csv file to the docker container but this failed due to secure-file-priv error. I tried to solve this many times but failed. 
+
+   Had I managed to set up the anomalies table, here are some of the queries I would have run
+
+
+Count the number of anomalies for each risk rating.
+SELECT `Risk Rating`, COUNT(*) AS count 
+FROM anomalies 
+GROUP BY `Risk Rating`;
+
+Filter anomalies based on a specific source IP address
+SELECT * FROM anomalies 
+WHERE `Source IP Address` = '192.168.1.1';
+
+Count the number of anomalies grouped by AWS region.
+SELECT `AWS Region`, COUNT(*) AS count 
+FROM anomalies 
+GROUP BY `AWS Region`;
+
+
 
 
 ## Assumptions
@@ -92,4 +117,3 @@ The risk scoring for each event is determined based on the following criteria:
 
 This methodology provides a comprehensive framework for analyzing CloudTrail logs and identifying potential security risks, allowing organizations to take timely action to protect their AWS environments.
 
-1. Installed Docker on my machine

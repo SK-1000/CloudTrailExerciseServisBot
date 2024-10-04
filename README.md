@@ -1,5 +1,17 @@
 # README
 
+
+To run this script firstly create a .env folder in the script folder and update with the following information 
+
+EMAIL_PASSWORD=yourpassword
+USER=userEmailAddress
+RECEIVER=receiverEmailAddress
+
+Then run the 'node node cloudTrailAnalysis.js'
+
+A file will be outputted to the same directory as the script and an email will be sent to the receiver email address (This would be a security alert email address)
+
+
 ## Exercise: Anomaly Detection and Risk Assessment in AWS CloudTrail Logs
 
 ### **Objective**
