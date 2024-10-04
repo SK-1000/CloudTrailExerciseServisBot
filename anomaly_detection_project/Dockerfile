@@ -5,8 +5,8 @@ FROM mysql:8.0
 ENV MYSQL_ROOT_PASSWORD=rootpw
 ENV MYSQL_DATABASE=anomaly_detection
 
-# Copy the initialization script to the Docker image
+# Copy initialization SQL script (if any)
 COPY init.sql /docker-entrypoint-initdb.d/
 
-# Expose port 3306
+# Expose port 3306 to allow connections to MySQL
 EXPOSE 3306

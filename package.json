@@ -12,5 +12,8 @@
     "dotenv": "^16.4.5",
     "ip": "^2.0.1",
     "nodemailer": "^6.9.15"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
   }
 }
